@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<link rel="stylesheet" href="styles.css">
+		<script type="module" src="script.js"></script>
+		<script src="https://use.fontawesome.com/3af6538f48.js"></script>
+
+		<style>
+			body {
+				font-family: sans-serif;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				width: 100vw;
+				height: 100vh;
+				margin: 0;
+				background-color: #f5dfbb;
+			}
+
+			body>* {
+				margin-bottom: 24px;
+			}
+
+			h1 {
+				margin-bottom: 16px;
+				color: rgb(87, 87, 87);
+			}
+
+			form {
+				width: 66vw;
+				max-width: 640px;
+				background-color: #e2cfb0;
+				border-radius: 8px;
+				box-shadow: 0 10px 20px rgba(0, 0, 0, 0.09), 0 6px 6px rgba(0, 0, 0, 0.13);
+				padding: 16px;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				color: #ccbbf5;
+			}
+
+			form>div {
+				width: 100%;
+				margin: 16px 0;
+				display: flex;
+				flex-direction: column;
+				color: black;
+
+			}
+
+			form>div>* {
+				margin-bottom: 8px;
+				color: black;
+			}
+
+			input,
+			select {
+				padding: 8px;
+				background-color: #f1e3ca;
+				border: none;
+				border-radius: 5.9px;
+				color: rgb(134, 134, 134);
+			}
+
+			button {
+				font-size: 15px;
+				padding: 0.5em 1em;
+				background-color: #ccbbf5;
+				;
+				border: none;
+				color: rgb(87, 87, 87);
+				border-radius: 4px;
+				cursor: pointer;
+				margin: 0 auto;
+
+			}
+
+			/*The focus pseudo class in CSS is used for styling an element that is currently targeted by the keyboard, or activated by the mouse*/
+			button:focus {
+				outline: none;
+			}
+
+			button:hover {
+				color: rgb(87, 87, 87);
+			}
+
+			.recorded>* {
+				margin: 8px 0;
+			}
+
+			.dashboard {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				grid-gap: 40px;
+			}
+
+			.dashboard>section {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+
+			.table {
+				width: 360px;
+			}
+
+			.table .tableRow {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				border-bottom: 1px solid #e3a08c;
+			}
+
+			.table .tableHeader {
+				background-color: #D8E4EB;
+			}
+
+			.table .tableRow>div {
+				text-align: center;
+				padding: 8px;
+			}
+
+			#Description {
+				height: 79px;
+			}
+
+			#date {
+				color: rgb(124, 124, 124)
+			}
+
+			.nextFormButton {
+				color: black;
+				width: 15rem;
+			}
+
+			
+
+			.switch:before {
+				columns: '\f0c9';
+				font-family: fontAwesome;
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				line-height: 60px;
+				text-align: center;
+				font-size: 24px;
+				color: black;
+			}
+
+			
+		</style>
+	</head>
+
+	<body>
+		<header>
+			<a href="#"><img src="imgs/icon.png" class="logo"></a>
+		</header>
+	
+			<main>
+			<div class="content">
+				<div class="textbot">
+			<h2 style="margin-bottom: 10px">Pet Product<span> Form</span></h2>
+		
+		
+			<form action='/survey/checkout' method='post' enctype="multipart/form-data">
+			<!--<div>
+				<label>
+					Step 1: What do you want to sell?
+				</label>
+				<input placeholder="Title" type="text">
+				<select name="Condition" id="cars">
+					<option value="" selected disabled hidden>Choose a condition for your item</option>
+					<option value="brandnew">Brand New</option>
+					<option value="preowned">Pre Owned</option>
+					<option value="used">Used</option>
+					<option value="veryused">Very Used</option>
+				</select>
+				<input placeholder="Description" type="text" id="Description">
+				<input placeholder="Price" type="text" class="field"><br>
+
+				<input type="file" id="myFile" name="filename">
+
+			</div>-->
+			<!--<div>
+				<label>
+					Step 2: How can your buyer contact you?
+				</label>
+				<input placeholder="Name" type="text">
+				<input placeholder="Email" type="text">
+				<input placeholder="Phone Number" type="text">
+				<input placeholder="Zip Code" type="text">
+			</div>-->
+			
+	
+
+			<div>
+				<label>
+					Step 3: When are you available?
+				</label>
+				<div id="schedulerCard">
+				<label>
+					Select Date
+				</label>
+				<div><input type="date"></div>
+				<label>
+					Select Time
+				</label>
+				<div id="startendinput" style="display: flex">
+					<div><input id="starttime" style="margin-bottom: 10px" type="time" name="Start Time_0_0" placeholder="--:-- --" required></div>
+				</div>
+				<div id="newElementIdTime"></div>
+
+				<br>
+				<div>
+					<input id="cloneTime" type="button" name="Add Time Button" value="+ Add Time" onClick="cloneDTime()">
+				</div>
+				
+			<div>
+				<!--<hr>
+				<div style="margin-top: 1rem">
+				<input id="cloneDate" type="button" value="+ Add Date" onclick="cloneDate()">
+				</div>
+			</div>-->
+
+			</div>
+			</div>
+			<div id="newElementIdDate"></div>
+			
+			
+		
+			<div id="addremovebtns">
+				<div id="dynamicCheckTime">
+
+				</div>
+
+				<div>
+					<button class="nextFormButton" style="margin-top: 5px" onclick="window.location.href='https://www.justpet.shop/Main/formstep2.html'">Back</button>
+
+					<button class="nextFormButton" style="margin-top: 5px">Create you listing</button>
+				</div>
+				<!--add value for the form for saving it in server-->
+			<input type='hidden' name='survey' value='formStepTracker'>
+			<!--displays a page that is shown after submitting a form-->
+			<input type='hidden' name='redirecturl' value="createSellProduct.html"> 
+			
+			</form>
+	</main>
+	<p style="font-size: 13px; margin-right: 54px"><b><i>*Before listing your product, please review our list of <a href="accepteddonations.html">accepted items.</a></i></b></p>
+				<!--Navigation Code-->
+		<div class="navigation">
+			<ul>
+				<li>
+					<a href="mainpage.html">
+						<span class="icon"><i class="fa fa-home" aria-hidden="true"></i></span>
+						<span class="title">Home</span>
+					</a>
+				</li>
+				<li>
+					<a href="formstep1.html">
+						<span class="icon"><i class="fa fa-plus-circle" aria-hidden="true"></i></span>
+						<span class="title">Add Product</span>
+					</a>
+				</li>
+				<!--<li>
+					<a href="#">
+						<span class="icon"><i class="fa fa-video-camera" aria-hidden="true"></i></span>
+						<span class="title">Blog</span>
+					</a>
+				</li>-->
+				<li>
+					<a href="feed.html">
+						<span class="icon"><i class="fa fa-th" aria-hidden="true"></i></span>
+						<span class="title">Search Product</span>
+					</a>
+				</li>
+				<li>
+					<a href="helpus.html">
+						<span class="icon"><i class="fa fa-users" aria-hidden="true"></i></span>
+						<span class="title">Join Us</span>
+					</a>
+					</li>
+					
+				<li>
+					<a href="partner.html">
+						<span class="icon"><i class="fa fa-handshake-o" aria-hidden="true"></i></span>
+						<span class="title">Our Partners</span>
+					</a>
+				</li>
+
+					
+				<li>
+					<a href="account.html">
+						<span class="icon"><i class="fa fa-cog" aria-hidden="true"></i></span>
+						<span class="title">Account</span>
+					</a>
+				</li>
+				
+				<li> 
+				<a href="feedback.html">
+						<span class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i> </span>
+						<span class="title">Contact</span>
+					</a>
+					</li>
+				<li> 
+
+			</ul>
+		</div>
+		
+
+		<script>
+			/*console.dir(document.getElementById("starttime"));
+
+			function cloneDTime() {
+				var itm = document.getElementById("starttime");
+				var cln = itm.cloneNode(true);
+				var div1 = document.createElement("DIV");
+				div1.appendChild(cln);
+				document.getElementById("newElementIdTime")
+					.appendChild(div1);
+
+				var div2 = document.createElement("DIV");
+				div2.appendChild(btnRemove);
+				document.getElementById("newElementIdTime")
+					.appendChild(div2);
+
+				//document.getElementById("newElementIdTime").appendChild(cln);
+			}
+			function cloneDate() {
+				var itm = document.getElementById("schedulerCard");
+				var cln = itm.cloneNode(true);
+				var div1 = document.createElement("DIV");
+				div1.appendChild(cln);
+				document.getElementById("newElementIdDate")
+					.appendChild(div1);
+
+				var div2 = document.createElement("DIV");
+				div2.appendChild(btnRemove);
+				document.getElementById("newElementIdDate")
+					.appendChild(div2);
+			}*/
+			function cloneDTime() {
+				var itm = document.getElementById("starttime");
+				var cln = itm.cloneNode(true);
+				var div1 = document.createElement("DIV");
+				div1.appendChild(cln);
+				document.getElementById("newElementIdTime")
+					.appendChild(div1);
+				div1.onclick = function () {
+					this.parentNode.removeChild(this);
+				}
+			}
+
+				//document.getElementById("newElementIdTime").appendChild(cln);
+			
+			
+			function cloneDate(){
+				console.log("I am here in clone date")
+				var itm = document.getElementById("schedulerCard");
+				var cln = itm.cloneNode(true);
+				var div1 = document.createElement("DIV");
+				div1.appendChild(cln);
+				document.getElementById("newDateCard")
+					.appendChild(div1);
+				div1.onclick = function () {
+					this.parentNode.removeChild(this);}
+			}
+		</script>
+
+	</body>
+
+</html>

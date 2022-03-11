@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+
+		<link rel="stylesheet" href="styles.css">
+		<script src="https://use.fontawesome.com/3af6538f48.js"></script>
+
+
+		<style>
+			#display_map {
+				width: 700px;
+				height: 500px;
+				margin-left: 5%;
+			}
+		</style>
+	</head>
+
+	<body>
+		<section>
+			<header>
+				<a href="https://www.justpet.shop/"><img src="imgs/icon.png" class="logo"></a>
+			</header>
+			<div class="content">
+				<div class="textbot">
+					<h2>Our <span>Partners</span></h2>
+					<p style="text-align: justify;
+                text-justify: inter-word; width: 350px"> Looking for a pet-related non-profit?
+
+<br><br>This map shows local non-profits that are available and those that are partners. You can click on the marker for more information.<br><br>For non-profits looking to expand their reach, contact us at partner@justpet.shop so we can add your organization to our database.</p>
+					<!--<a class="button1" href="formstep1.html"> <b>Donate Goods</b> </a>
+					<a class="button1" href="helpus.html"><b>How You Can Help? </b> </a>-->
+				</div>
+				
+				
+
+					
+
+
+				
+			</div>
+			<div id="display_map"></div>
+		</section>
+
+
+		<div class="navigation">
+			<ul>
+				<li>
+					<a href="mainpage.html">
+						<span class="icon"><i class="fa fa-home" aria-hidden="true"></i></span>
+						<span class="title">Home</span>
+					</a>
+				</li>
+				<li>
+					<a href="formstep1.html">
+						<span class="icon"><i class="fa fa-plus-circle" aria-hidden="true"></i></span>
+						<span class="title">Add Product</span>
+					</a>
+				</li>
+				<!--<li>
+					<a href="#">
+						<span class="icon"><i class="fa fa-video-camera" aria-hidden="true"></i></span>
+						<span class="title">Blog</span>
+					</a>
+				</li>-->
+				<li>
+					<a href="feed.html">
+						<span class="icon"><i class="fa fa-th" aria-hidden="true"></i></span>
+						<span class="title">Search Product</span>
+					</a>
+				</li>
+				<li>
+					<a href="helpus.html">
+						<span class="icon"><i class="fa fa-users" aria-hidden="true"></i></span>
+						<span class="title">Join Us</span>
+					</a>
+				</li>
+
+				<li>
+					<a href="partner.html">
+						<span class="icon"><i class="fa fa-handshake-o" aria-hidden="true"></i></span>
+						<span class="title">Our Partners</span>
+					</a>
+				</li>
+
+
+				<li>
+					<a href="account.html">
+						<span class="icon"><i class="fa fa-cog" aria-hidden="true"></i></span>
+						<span class="title">Account</span>
+					</a>
+				</li>
+
+				<li>
+					<a href="feedback.html">
+						<span class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i> </span>
+						<span class="title">Contact</span>
+					</a>
+				</li>
+				<li>
+
+			</ul>
+		</div>
+
+
+		<footer>
+			<div>
+				<p>Join our community to make a difference!</p>
+				<p><a href="form.html">Donate Goods</a> | <a href="feedback.html">Contact Us</a></p>
+				<p>Powered by <a href="https://www.qoom.io" target="_blank">Qoom</a></p>
+			</div>
+		</footer>
+		<script>
+			var map1;
+
+			function initMap() {
+
+				//Displaying Map
+				map = new google.maps.Map(document.getElementById('display_map'), {
+					zoom: 7,
+					center: { lat: 35.776096, lng: -78.784386 }
+				});
+
+				/*var marker = new google.maps.Marker({
+					position: { lat: 35.776096, lng: -78.784386 }, 	icon: "imgs/icon_map.png",
+					map: map1
+				});*/
+				//JustPet HQ
+				const hq = new google.maps.Marker({
+					position: { lat: 35.2611402, lng: -80.8150906 },
+					map,
+					icon: 'imgs/icon_map.png'
+					
+				});
+				var conHQ ="<h4>JustPet HQ</h4>"
+				var infoHQ = new google.maps.InfoWindow({content: conHQ});
+					hq.addListener("click", function () {
+						infoHQ.open(map, hq);
+					})
+
+				//Adding Markers
+				addMarker({
+					coords: { lat: 35.773469, lng: -78.844943 },
+					content: '<h4>Partner 1</h4>'
+				})
+				addMarker({
+					coords: { lat: 35.825664, lng: -78.6586652 },
+					content: '<h4>Pet Chaplain</h4>'
+
+				})
+				addMarker({
+					coords: { lat: 35.7841461, lng: -79.8841144 },
+					content: '<h4>People & Paws 4 Hope, Inc</h4>',
+
+				})
+				addMarker({
+					coords:{ lat: 35.7205753, lng: -78.8882379 },
+					content: '<h4>Second Chance Pet Adoption</h4>'
+				})
+				addMarker({
+					coords:{ lat: 35.807909, lng: -78.7713173 },
+					content: '<h4>Helping Hands of RTP</h4>'
+				})
+				addMarker({
+					coords:{ lat: 35.904557, lng: -78.7773796 },
+					content: '<h4>AKC Reunite</h4>'
+				})
+				addMarker({
+					coords:{ lat: 35.8337, lng: -79.0504223 },
+					content: '<h4>Eyes Ears Nose and Paws</h4>'
+				})
+				addMarker({
+					coords:{ lat: 35.1675177, lng: -79.2202307 },
+					content: '<h4>Companion Animal Clinic of the Sandhills Foundation</h4>'
+				})
+				addMarker({
+					coords:{ lat: 35.2750551, lng: -79.6768608 },
+					content: '<h4>Read and Feed</h4>'
+				})
+				addMarker({
+					coords:{ lat: 35.0807919, lng: -80.0657607 },
+					content: '<h4>Fayetteville Animal Protection Society</h4>'
+				})
+				addMarker({
+					coords:{ lat: 35.7841461, lng: -79.8841144 },
+					content: '<h4>Animal Ed.ventures Sanctuary: Earth-Speak Park</h4>',
+				})
+				
+				//Defining Marker Code
+				function addMarker(x) {
+					const marker = new google.maps.Marker({
+						position: x.coords,
+						map: map,
+						draggable: true,
+						icon: x.iconee,
+						animation: google.maps.Animation.DROP
+					});
+					var infoWindow = new google.maps.InfoWindow({ content: x.content });
+					marker.addListener("click", function () {
+						infoWindow.open(map, marker);
+					})
+
+					//This code is for animating a marker
+					marker.addListener("click", toggleBounce);
+
+					function toggleBounce() {
+						if (marker.getAnimation() !== null) {
+							marker.setAnimation(null);
+							console.log("animation1")
+						} else {
+							marker.setAnimation(google.maps.Animation.BOUNCE);
+							console.log("animation2")
+						}
+					}
+				}
+			}
+		</script>
+		<script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCIKgbDV45XOkwhPPIJ3slCX7KNvtUv4nI&callback=initMap">
+		</script>
+
+	</body>
+
+
+</html>

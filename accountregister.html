@@ -1,0 +1,390 @@
+<!--<!DOCTYPE html>
+<html>
+
+	<head>
+		<link rel="stylesheet" href="styles.css">
+		<script src="https://use.fontawesome.com/3af6538f48.js"></script>
+		<style>
+			body{
+			font-family: 'Poppins', sans-serif;
+			  background-color: #f5dfbb;
+		}
+			.login{
+				width: 350px;
+				height: 300px;
+				background-color: #E2CFB0;
+				margin: auto;
+				margin-top: 200px;
+				box-shadow: 0 10px 20px rgba(0, 0, 0, 0.09), 0 6px 6px rgba(0, 0, 0, 0.13);
+
+			}
+			.title{
+				color: rgb(87, 87, 87);
+				font-weight: bold;
+				font-size: 25px;
+				margin-left: 25px;
+				padding-top: 20px;
+			}
+			.title span{
+				color: #F3852E;;
+			}
+			hr{
+				width: 90%;
+				border: 1px solid #F1E3CA;
+			}
+			.feild{
+				width: 80%;
+				margin: 15px;
+				height: 30px;
+				border-radius: 5px;
+				border: none;
+				margin-left: 25px;
+				background-color: #F1E3CA;
+				padding-left: 5px;
+				font-size: 15px;
+				
+			}
+			.submit{
+				background-color: #CCBBF5;
+				font-size: 15px;
+				text-align: center;
+				height: 35px;
+			    width: 80%;
+				border-radius: 5px;
+				border: none;
+				margin-left: 25px;
+			}
+		</style>
+	</head>
+	
+
+	<body>
+		<div class="navigation">
+			<ul>
+				<li>
+					<a href="mainpage.html">
+						<span class="icon"><i class="fa fa-home" aria-hidden="true"></i></span>
+						<span class="title">Home</span>
+					</a>
+				</li>
+				<li>
+					<a href="formstep1.html">
+						<span class="icon"><i class="fa fa-plus-circle" aria-hidden="true"></i></span>
+						<span class="title">Add Product</span>
+					</a>
+				</li>
+				<!--<li>
+					<a href="#">
+						<span class="icon"><i class="fa fa-video-camera" aria-hidden="true"></i></span>
+						<span class="title">Blog</span>
+					</a>
+				</li>-->
+		<!--	<div>	<li>
+					<a href="feed.html">
+						<span class="icon"><i class="fa fa-th" aria-hidden="true"></i></span>
+						<span class="title">Search Product</span>
+					</a>
+				</li>
+				<li>
+					<a href="aboutus.html">
+						<span class="icon"><i class="fa fa-users" aria-hidden="true"></i></span>
+						<span class="title">Join Us</span>
+					</a>
+					</li>
+					
+				<li>
+					<a href="partner.html">
+						<span class="icon"><i class="fa fa-handshake-o" aria-hidden="true"></i></span>
+						<span class="title">Our Partners</span>
+					</a>
+				</li>
+
+					
+				<li>
+					<a href="account.html">
+						<span class="icon"><i class="fa fa-cog" aria-hidden="true"></i></span>
+						<span class="title">Account</span>
+					</a>
+				</li>
+				
+				<li> 
+				<a href="feedback.html">
+						<span class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i> </span>
+						<span class="title">Contact</span>
+					</a>
+					</li>
+				<li> 
+
+			</ul>
+		</div>-->
+	<!--	<div class="login">
+
+			<form action="/signup" method='POST' enctype='multipart/form-data'>
+				<p class="title">Log <span>In</span></p>
+				<hr>
+				<input class="feild" type="text" id="username" name="username" placeholder="Username">
+				<input class="feild" type="text" id="password" name="password" placeholder="Password"><br><br>
+				<input class="submit" type="submit" value="Log in">
+				<input type="hidden" name='redirecturl' value='account'>
+			</form>
+		</div>-->
+
+
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<link rel="stylesheet" href="styles.css">
+		<script type="module" src="script.js"></script>
+		<script src="https://use.fontawesome.com/3af6538f48.js"></script>
+
+		<style>
+			body {
+				font-family: sans-serif;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				width: 100vw;
+				height: 100vh;
+				margin: 0;
+				background-color: #f5dfbb;
+			}
+
+			body>* {
+				margin-bottom: 24px;
+			}
+
+			h1 {
+				margin-bottom: 16px;
+				color: rgb(87, 87, 87);
+			}
+
+			form {
+				width: 66vw;
+				max-width: 640px;
+				background-color: #e2cfb0;
+				border-radius: 8px;
+				box-shadow: 0 10px 20px rgba(0, 0, 0, 0.09), 0 6px 6px rgba(0, 0, 0, 0.13);
+				padding: 16px;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				color: #ccbbf5;
+				
+			}
+
+			form>div {
+				width: 100%;
+				margin: 16px 0;
+				display: flex;
+				flex-direction: column;
+				color: black;
+
+			}
+
+			form>div>* {
+				margin-bottom: 8px;
+				color: black;
+			}
+
+			input,
+			select {
+				padding: 8px;
+				background-color: #f1e3ca;
+				border: none;
+				border-radius: 5.9px;
+				color: rgb(134, 134, 134);
+			}
+
+			button {
+				font-size: 15px;
+				padding: 0.5em 1em;
+				background-color: #ccbbf5;
+				;
+				border: none;
+				color: rgb(87, 87, 87);
+				border-radius: 4px;
+				cursor: pointer;
+				margin: 0 auto;
+
+			}
+
+			/*The focus pseudo class in CSS is used for styling an element that is currently targeted by the keyboard, or activated by the mouse*/
+			button:focus {
+				outline: none;
+			}
+
+			button:hover {
+				color: rgb(87, 87, 87);
+			}
+
+			.recorded>* {
+				margin: 8px 0;
+			}
+
+			.dashboard {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				grid-gap: 40px;
+			}
+
+			.dashboard>section {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+
+			.table {
+				width: 360px;
+			}
+
+			.table .tableRow {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				border-bottom: 1px solid #e3a08c;
+			}
+
+			.table .tableHeader {
+				background-color: #D8E4EB;
+			}
+
+			.table .tableRow>div {
+				text-align: center;
+				padding: 8px;
+			}
+
+			#Description {
+				height: 79px;
+			}
+
+			#date {
+				color: rgb(124, 124, 124)
+			}
+
+			.nextFormButton {
+				color: black;
+				width: 15rem;
+			}
+
+
+			.switch:before {
+				columns: '\f0c9';
+				font-family: fontAwesome;
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				line-height: 60px;
+				text-align: center;
+				font-size: 24px;
+				color: black;
+			}
+
+		</style>
+	</head>
+
+	<body>
+		<header>
+			<a href="#"><img src="imgs/icon.png" class="logo"></a>
+		</header>
+	
+			<main>
+			<div class="content">
+				<div class="textbot">
+			<h2 style="margin-bottom: 30px">Sign <span>Up</span></h2>
+		
+			<form action='/survey/checkout' method='post' enctype="multipart/form-data">
+			<div>
+				<label>
+				Username
+				</label>
+				<input placeholder="Choose a username" type="text" class="field">
+				<label>
+				Password
+				</label>
+				<input placeholder="Choose Password" type="password" class="field">
+				Confirm Password
+				</label>
+				<input placeholder="Enter password again" type="password" class="field">
+				
+			</div>
+
+			<div>
+
+					<button class="nextFormButton" style="margin-top: 5px">Submit</button>
+				</div>
+				<!--add value for the form for saving it in server-->
+			<input type='hidden' name='survey' value='ContactUsTracker'>
+			<!--displays a page that is shown after submitting a form-->
+			<input type='hidden' name='redirecturl' value="accountlogin.html"> 
+			<input type='hidden' name='Title'>
+
+		</form>
+	</div>
+	</div>
+
+				
+	</main>
+				<!--Navigation Code-->
+				<div class="navigation">
+			<ul>
+				<li>
+					<a href="mainpage.html">
+						<span class="icon"><i class="fa fa-home" aria-hidden="true"></i></span>
+						<span class="title">Home</span>
+					</a>
+				</li>
+				<li>
+					<a href="formstep1.html">
+						<span class="icon"><i class="fa fa-plus-circle" aria-hidden="true"></i></span>
+						<span class="title">Add Product</span>
+					</a>
+				</li>
+				<!--<li>
+					<a href="#">
+						<span class="icon"><i class="fa fa-video-camera" aria-hidden="true"></i></span>
+						<span class="title">Blog</span>
+					</a>
+				</li>-->
+				<li>
+					<a href="feed.html">
+						<span class="icon"><i class="fa fa-th" aria-hidden="true"></i></span>
+						<span class="title">Search Product</span>
+					</a>
+				</li>
+				<li>
+					<a href="helpus.html">
+						<span class="icon"><i class="fa fa-users" aria-hidden="true"></i></span>
+						<span class="title">Join Us</span>
+					</a>
+					</li>
+					
+				<li>
+					<a href="partner.html">
+						<span class="icon"><i class="fa fa-handshake-o" aria-hidden="true"></i></span>
+						<span class="title">Our Partners</span>
+					</a>
+				</li>
+
+					
+				<li>
+					<a href="account.html">
+						<span class="icon"><i class="fa fa-cog" aria-hidden="true"></i></span>
+						<span class="title">Account</span>
+					</a>
+				</li>
+				
+				<li> 
+				<a href="feedback.html">
+						<span class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i> </span>
+						<span class="title">Contact</span>
+					</a>
+					</li>
+				<li> 
+
+			</ul>
+		</div>
+
+	</body>
+
+</html>

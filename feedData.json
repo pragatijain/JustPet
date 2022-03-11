@@ -1,0 +1,124 @@
+[
+	{
+		"Condition": "3",
+		"redirecturl": "dashboard.html",
+		"petType": "dog",
+		"Title": "Dog Bed for the Pool",
+		"description": "Rusty loved it! He used it this summer as a puppy a few times. He has outgrown it. If you have a puppy, your pet is going to love floating on it in the pool",
+		"price": "100",
+		"location": 11111,
+		"imageURL": "https://m.media-amazon.com/images/I/61Hkdqm2t9L._AC_SX425_.jpg",
+		"productURL": "https://www.justpet.shop/Main/ppage2.html",
+		"username":"admin"
+	},
+	{
+		
+		"Condition": "5",
+		"redirecturl": "dashboard.html",
+		"petType": "bird",
+		"Title": "Bird Cage",
+		"description": "This bird cage is in excellent condition and can be used for medium birds. It can house a couple of smaller birds also. My bird was too big for the cage. The dealer refused to take it back as it was on clearance.",
+		"price": "10",
+		"location": 23542,
+		"imageURL": "https://i.ebayimg.com/images/g/AYAAAOSwdb1dW7yn/s-l400.png",
+		"productURL": "https://www.justpet.shop/Main/ppage3.html",
+		"username":"admin"
+	},
+	{
+		
+		"Condition": "3",
+		"redirecturl": "dashboard.html",
+		"Title": "Dog Bed",
+		"petType": "dog",
+		"description": "Beautiful, comfy, gentily used bed for your pet. reasonaly priced.",
+		"price": "10",
+		"location": 55255,
+		"imageURL": "https://m.media-amazon.com/images/I/81ZFlW1cpKL._AC_SL1500_.jpg",
+		"productURL": "https://www.justpet.shop/Main/ppage4.html",
+		"username":"admin"
+	},
+	{
+	
+		"Condition": "5",
+		"redirecturl": "dashboard.html",
+		"Title": "Medium Size Fish Tank",
+		"petType": "fish",
+		"description": "Ugrading to a bigger tank! No cracks, excellent condition.",
+		"price": "100",
+		"location": 66266,
+		"imageURL": "https://www.mercyhome.org/wp-content/uploads/2018/05/FishTank1.jpg",
+		"productURL": "https://www.justpet.shop/Main/ppage5.html"
+	},
+	{
+	
+		"Condition": "5",
+		"redirecturl": "dashboard.html",
+		"Title": "Unopened Meal Worms for Reptiles",
+		"petType": "reptile",
+		"description": "Unopened meal worms for reptiles. Bought too many! Expiry date is next year. 5 packets for $5.",
+		"price": "5",
+		"location": 66266,
+		"imageURL": "https://m.media-amazon.com/images/I/71ymJJmacUS._AC_SX466_.jpg",
+		"productURL": "https://www.justpet.shop/Main/ppage6.html"
+	},
+	{
+	
+		"Condition": "5",
+		"redirecturl": "dashboard.html",
+		"Title": "Unopened Cat Food",
+		"petType": "cat",
+		"description": "Unopened food for cats. Bought too many! Expiry date is next year. 2 packets for $25.",
+		"price": "5",
+		"location": 66266,
+		"imageURL": "https://s7d2.scene7.com/is/image/PetSmart/5178105",
+		"productURL": "https://www.justpet.shop/Main/ppage7.html"
+	},
+	{
+	
+		"Condition": "5",
+		"redirecturl": "dashboard.html",
+		"Title": "Cat Scratcher Tree",
+		"petType": "cat",
+		"description": "My cat got too many scratch trees for her birthday.😎This is available in its original packing..",
+		"price": "5",
+		"location": 66266,
+		"imageURL": "https://i5.walmartimages.com/asr/0788e6b2-9dc6-4145-9cab-11ba8e8d2b67.ca87cabf4124e2f5fc3d996b2f3847e1.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF",
+		"productURL": "https://www.justpet.shop/Main/ppage1.html"
+	},
+	{
+	
+		"Condition": "4",
+		"redirecturl": "dashboard.html",
+		"Title": "Reptile Desert Terrarmium",
+		"petType": "reptile",
+		"description": "Bought it from Wayfair for $150. Cici loved it. She is back in the nature. So, no longer need it ",
+		"price": "5",
+		"location": 66266,
+		"imageURL": "imgs/repter.png",
+		"productURL": "https://www.justpet.shop/Main/ppage11.html"
+	},
+	{
+	
+		"Condition": "4",
+		"redirecturl": "dashboard.html",
+		"Title": "Bunny Play Pen",
+		"petType": "others",
+		"description": "Bought it from Wayfair for $150. My bunnies loved it. They are now in the nature. ",
+		"price": "5",
+		"location": 66266,
+		"imageURL": "imgs/bunnyhome.png",
+		"productURL": "https://www.justpet.shop/Main/ppage10.html"
+	},
+	{
+	
+		"Condition": "4",
+		"redirecturl": "dashboard.html",
+		"Title": "Tortoise Play Pen",
+		"petType": "others",
+		"description": "Built this playpen for my Sitara. She is 5 years old. Sitara moved and explored all corners. Building a new, bigger home for her. Grab it if you think your tortoise likes playing hide and seek!",
+		"price": "5",
+		"location": 66266,
+		"imageURL": "https://i.pinimg.com/originals/15/d1/3e/15d13e19ff1f390d34f4a752216add08.jpg",
+		"productURL": "https://www.justpet.shop/Main/ppage9.html"
+	}
+]
