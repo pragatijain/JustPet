@@ -23,7 +23,8 @@ As per [this](https://www.globenewswire.com/news-release/2020/10/15/2108941/0/en
 ) report, the Pet market is expected to grow to $40 billion by 2025.
 
 The JustPet ACF team wants to create a platform to connect non-profit organizations and pet owners looking to give away their pet products---finding new homes for used pet gear.
-![]()
+
+<img src="imgs/justpet_platformobjective.png">
 
 <h3>My Contribution</h3>
 
